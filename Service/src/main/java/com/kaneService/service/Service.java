@@ -1,13 +1,13 @@
-package com.kane.SpringDownloader.service;
+package com.kaneService.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = {"com.kane"})
-public class SpringDownloaderApplication {
+public class Service {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringDownloaderApplication.class, args);
+		SpringApplication.run(Service.class, args);
 	}
 
 }

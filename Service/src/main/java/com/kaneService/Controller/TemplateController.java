@@ -1,4 +1,4 @@
-package com.kane.SpringDownloader.Controller;
+package com.kaneService.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,5 +11,9 @@ public class TemplateController {
     public String imdexTemplate(@RequestParam(value = "name",required = false,defaultValue = "qqq") String name, Model model){
         model.addAttribute("name",name);
         return "index2";
+    }
+    @RequestMapping("/")
+    public String staticIndex(){
+        return "forward:/html/index.html";
     }
 }
