@@ -3,12 +3,9 @@ package com.kaneService.service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = {"com.kane"})
+@SpringBootApplication(scanBasePackages = {"com.kaneService"})
 public class Service {
-
 	public static void main(String[] args) {
 		SpringApplication.run(Service.class, args);
 	}
-
 }
-
